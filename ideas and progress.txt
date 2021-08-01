@@ -1,0 +1,33 @@
+IDEAS
+- Assertions that Buttons were Pressed
+    - Make a Check that there is enough space for bombs
+- Hint Button
+    - Solve one Square
+    - Solve Remainder
+- Customisable Grid (Size, Bombs)
+- Save/Load States (same Board)
+- In Setup Screen, making Grid Type a table
+
+PROGRESS
+- Intro Screen for Settings ()
+    - General Appearance (/)
+    - Functionality (/)
+    - Loading a Game ()
+- Board Generation (/)
+
+- make Buttons refer to a Point on a 2d Array Board (/)
+    - Save Board ()
+    - Bomb Counter (/)
+    - Timer ()
+- Manual Game (/)
+    - Clear Field of Zeroes (/)
+    - Button Functionality (/)
+        - Hide/Show (Bomb, Number, Empty, etc) (/)
+            - Image ()
+        - End Game if Bomb (/)
+- Solver Algorithm ()
+    - Logic ()
+    - Hint Button ()
+    - AI Solver ()
+
+CURRENT ISSUES

@@ -1,0 +1,1 @@
+- i tried using a dictionary to store buttons and their values, but i couldn't figure it out so I had to make multiple 2d arrays instead
