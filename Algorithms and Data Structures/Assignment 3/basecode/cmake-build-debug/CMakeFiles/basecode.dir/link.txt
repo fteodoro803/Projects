@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/basecode.dir/src/ai.c.o CMakeFiles/basecode.dir/src/hashtable.c.o CMakeFiles/basecode.dir/src/list.c.o CMakeFiles/basecode.dir/src/stack.c.o CMakeFiles/basecode.dir/src/utils.c.o CMakeFiles/basecode.dir/peg_solitaire.c.o  -o basecode 

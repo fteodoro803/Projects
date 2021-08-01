@@ -1,0 +1,191 @@
+==7267== Memcheck, a memory error detector
+==7267== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==7267== Using Valgrind-3.15.0-608cb11914-20190413 and LibVEX; rerun with -h for copyright info
+==7267== Command: ./pegsol 5 AI 1200000
+==7267== Parent PID: 7122
+==7267== 
+--7267-- 
+--7267-- Valgrind options:
+--7267--    --leak-check=full
+--7267--    --show-leak-kinds=all
+--7267--    --track-origins=yes
+--7267--    --verbose
+--7267--    --log-file=valgrind-out.txt
+--7267-- Contents of /proc/version:
+--7267--   Linux version 4.4.0-18362-Microsoft (Microsoft@Microsoft.com) (gcc version 5.4.0 (GCC) ) #1049-Microsoft Thu Aug 14 12:01:00 PST 2020
+--7267-- 
+--7267-- Arch and hwcaps: AMD64, LittleEndian, amd64-cx16-lzcnt-rdtscp-sse3-ssse3-avx-avx2-bmi-f16c-rdrand
+--7267-- Page sizes: currently 4096, max supported 4096
+--7267-- Valgrind library directory: /usr/lib/x86_64-linux-gnu/valgrind
+--7267-- Reading syms from /mnt/c/Users/Agustin Teodoro/Desktop/UniMelb/Algorithms and Data Structures/Assignment 3/basecode/pegsol
+--7267-- Reading syms from /usr/lib/x86_64-linux-gnu/ld-2.31.so
+--7267--   Considering /usr/lib/x86_64-linux-gnu/ld-2.31.so ..
+--7267--   .. CRC mismatch (computed 6cded93a wanted 1af57820)
+--7267--   Considering /lib/x86_64-linux-gnu/ld-2.31.so ..
+--7267--   .. CRC mismatch (computed 6cded93a wanted 1af57820)
+--7267--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/ld-2.31.so ..
+--7267--   .. CRC is valid
+--7267-- Reading syms from /usr/lib/x86_64-linux-gnu/valgrind/memcheck-amd64-linux
+--7267--    object doesn't have a symbol table
+--7267--    object doesn't have a dynamic symbol table
+--7267-- Scheduler: using generic scheduler lock implementation.
+--7267-- Reading suppressions file: /usr/lib/x86_64-linux-gnu/valgrind/default.supp
+==7267== embedded gdbserver: reading from /tmp/vgdb-pipe-from-vgdb-to-7267-by-agustinteodoro-on-???
+==7267== embedded gdbserver: writing to   /tmp/vgdb-pipe-to-vgdb-from-7267-by-agustinteodoro-on-???
+==7267== embedded gdbserver: shared mem   /tmp/vgdb-pipe-shared-mem-vgdb-7267-by-agustinteodoro-on-???
+==7267== 
+==7267== TO CONTROL THIS PROCESS USING vgdb (which you probably
+==7267== don't want to do, unless you know exactly what you're doing,
+==7267== or are doing some strange experiment):
+==7267==   /usr/lib/x86_64-linux-gnu/valgrind/../../bin/vgdb --pid=7267 ...command...
+==7267== 
+==7267== TO DEBUG THIS PROCESS USING GDB: start GDB like this
+==7267==   /path/to/gdb ./pegsol
+==7267== and then give GDB the following command
+==7267==   target remote | /usr/lib/x86_64-linux-gnu/valgrind/../../bin/vgdb --pid=7267
+==7267== --pid is optional if only one valgrind process is running
+==7267== 
+==7267== error calling PR_SET_PTRACER, vgdb might block
+--7267-- REDIR: 0x4022d80 (ld-linux-x86-64.so.2:strlen) redirected to 0x580c9ce2 (???)
+--7267-- REDIR: 0x4022b50 (ld-linux-x86-64.so.2:index) redirected to 0x580c9cfc (???)
+--7267-- Reading syms from /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_core-amd64-linux.so
+--7267--    object doesn't have a symbol table
+--7267-- Reading syms from /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so
+--7267--    object doesn't have a symbol table
+==7267== WARNING: new redirection conflicts with existing -- ignoring it
+--7267--     old: 0x04022d80 (strlen              ) R-> (0000.0) 0x580c9ce2 ???
+--7267--     new: 0x04022d80 (strlen              ) R-> (2007.0) 0x0483f060 strlen
+--7267-- REDIR: 0x401f560 (ld-linux-x86-64.so.2:strcmp) redirected to 0x483ffd0 (strcmp)
+--7267-- REDIR: 0x40232e0 (ld-linux-x86-64.so.2:mempcpy) redirected to 0x4843a20 (mempcpy)
+--7267-- Reading syms from /usr/lib/x86_64-linux-gnu/libc-2.31.so
+--7267--   Considering /usr/lib/x86_64-linux-gnu/libc-2.31.so ..
+--7267--   .. CRC mismatch (computed cd1655d1 wanted 09373696)
+--7267--   Considering /lib/x86_64-linux-gnu/libc-2.31.so ..
+--7267--   .. CRC mismatch (computed cd1655d1 wanted 09373696)
+--7267--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/libc-2.31.so ..
+--7267--   .. CRC is valid
+--7267-- REDIR: 0x48f6600 (libc.so.6:memmove) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--7267-- REDIR: 0x48f5900 (libc.so.6:strncpy) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--7267-- REDIR: 0x48f6930 (libc.so.6:strcasecmp) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--7267-- REDIR: 0x48f5220 (libc.so.6:strcat) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--7267-- REDIR: 0x48f5960 (libc.so.6:rindex) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--7267-- REDIR: 0x48f7dd0 (libc.so.6:rawmemchr) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--7267-- REDIR: 0x4912e60 (libc.so.6:wmemchr) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--7267-- REDIR: 0x49129a0 (libc.so.6:wcscmp) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--7267-- REDIR: 0x48f6760 (libc.so.6:mempcpy) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--7267-- REDIR: 0x48f6590 (libc.so.6:bcmp) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--7267-- REDIR: 0x48f5890 (libc.so.6:strncmp) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--7267-- REDIR: 0x48f52d0 (libc.so.6:strcmp) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--7267-- REDIR: 0x48f66c0 (libc.so.6:memset) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--7267-- REDIR: 0x4912960 (libc.so.6:wcschr) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--7267-- REDIR: 0x48f57f0 (libc.so.6:strnlen) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--7267-- REDIR: 0x48f53b0 (libc.so.6:strcspn) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--7267-- REDIR: 0x48f6980 (libc.so.6:strncasecmp) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--7267-- REDIR: 0x48f5350 (libc.so.6:strcpy) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--7267-- REDIR: 0x48f6ad0 (libc.so.6:memcpy@@GLIBC_2.14) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--7267-- REDIR: 0x49140d0 (libc.so.6:wcsnlen) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--7267-- REDIR: 0x49129e0 (libc.so.6:wcscpy) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--7267-- REDIR: 0x48f59a0 (libc.so.6:strpbrk) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--7267-- REDIR: 0x48f5280 (libc.so.6:index) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--7267-- REDIR: 0x48f57b0 (libc.so.6:strlen) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--7267-- REDIR: 0x48fed20 (libc.so.6:memrchr) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--7267-- REDIR: 0x48f69d0 (libc.so.6:strcasecmp_l) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--7267-- REDIR: 0x48f6550 (libc.so.6:memchr) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--7267-- REDIR: 0x4912ab0 (libc.so.6:wcslen) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--7267-- REDIR: 0x48f5c60 (libc.so.6:strspn) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--7267-- REDIR: 0x48f68d0 (libc.so.6:stpncpy) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--7267-- REDIR: 0x48f6870 (libc.so.6:stpcpy) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--7267-- REDIR: 0x48f7e10 (libc.so.6:strchrnul) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--7267-- REDIR: 0x48f6a20 (libc.so.6:strncasecmp_l) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--7267-- REDIR: 0x49de490 (libc.so.6:__strrchr_avx2) redirected to 0x483ea10 (rindex)
+--7267-- REDIR: 0x49da790 (libc.so.6:__rawmemchr_avx2) redirected to 0x4843580 (rawmemchr)
+--7267-- REDIR: 0x49d9b60 (libc.so.6:__strcmp_avx2) redirected to 0x483fed0 (strcmp)
+--7267-- REDIR: 0x49de2a0 (libc.so.6:__strchrnul_avx2) redirected to 0x4843540 (strchrnul)
+--7267-- REDIR: 0x48f0260 (libc.so.6:malloc) redirected to 0x483b780 (malloc)
+--7267-- REDIR: 0x49e1af0 (libc.so.6:__memset_avx2_unaligned_erms) redirected to 0x48428e0 (memset)
+--7267-- REDIR: 0x49e1650 (libc.so.6:__mempcpy_avx_unaligned_erms) redirected to 0x4843660 (mempcpy)
+--7267-- REDIR: 0x49de660 (libc.so.6:__strlen_avx2) redirected to 0x483ef40 (strlen)
+--7267-- REDIR: 0x49e1670 (libc.so.6:__memcpy_avx_unaligned_erms) redirected to 0x48429f0 (memmove)
+--7267-- REDIR: 0x49dac50 (libc.so.6:__memcmp_avx2_movbe) redirected to 0x48421e0 (bcmp)
+--7267-- REDIR: 0x48f0850 (libc.so.6:free) redirected to 0x483c9d0 (free)
+==7267== 
+==7267== Process terminating with default action of signal 1 (SIGHUP)
+==7267==    at 0x10C6BA: find_solution (ai.c:117)
+==7267==    by 0x10970F: main (in /mnt/c/Users/Agustin Teodoro/Desktop/UniMelb/Algorithms and Data Structures/Assignment 3/basecode/pegsol)
+==7267== 
+==7267== HEAP SUMMARY:
+==7267==     in use at exit: 270,138,798 bytes in 1,875,678 blocks
+==7267==   total heap usage: 3,356,657 allocs, 1,480,979 frees, 424,161,022 bytes allocated
+==7267== 
+==7267== Searching for pointers to 1,875,678 not-freed blocks
+==7267== Checked 220,552,848 bytes
+==7267== 
+==7267== 104 bytes in 1 blocks are still reachable in loss record 1 of 9
+==7267==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==7267==    by 0x10C4AD: create_init_node (ai.c:39)
+==7267==    by 0x10C613: find_solution (ai.c:86)
+==7267==    by 0x10970F: main (in /mnt/c/Users/Agustin Teodoro/Desktop/UniMelb/Algorithms and Data Structures/Assignment 3/basecode/pegsol)
+==7267== 
+==7267== 1,560 bytes in 15 blocks are possibly lost in loss record 2 of 9
+==7267==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==7267==    by 0x10C50E: applyAction (ai.c:55)
+==7267==    by 0x10C72C: find_solution (ai.c:122)
+==7267==    by 0x10970F: main (in /mnt/c/Users/Agustin Teodoro/Desktop/UniMelb/Algorithms and Data Structures/Assignment 3/basecode/pegsol)
+==7267== 
+==7267== 37,024 bytes in 356 blocks are still reachable in loss record 3 of 9
+==7267==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==7267==    by 0x10C50E: applyAction (ai.c:55)
+==7267==    by 0x10C72C: find_solution (ai.c:122)
+==7267==    by 0x10970F: main (in /mnt/c/Users/Agustin Teodoro/Desktop/UniMelb/Algorithms and Data Structures/Assignment 3/basecode/pegsol)
+==7267== 
+==7267== 11,254,056 bytes in 468,919 blocks are still reachable in loss record 4 of 9
+==7267==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==7267==    by 0x10BE2F: _ht_create_node (hashtable.c:354)
+==7267==    by 0x10BF4C: _ht_push_front (hashtable.c:372)
+==7267==    by 0x10B4F1: ht_insert (hashtable.c:145)
+==7267==    by 0x10C7D3: find_solution (ai.c:139)
+==7267==    by 0x10970F: main (in /mnt/c/Users/Agustin Teodoro/Desktop/UniMelb/Algorithms and Data Structures/Assignment 3/basecode/pegsol)
+==7267== 
+==7267== 27,552,200 bytes in 264,925 blocks are indirectly lost in loss record 5 of 9
+==7267==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==7267==    by 0x10C50E: applyAction (ai.c:55)
+==7267==    by 0x10C72C: find_solution (ai.c:122)
+==7267==    by 0x10970F: main (in /mnt/c/Users/Agustin Teodoro/Desktop/UniMelb/Algorithms and Data Structures/Assignment 3/basecode/pegsol)
+==7267== 
+==7267== 37,982,439 bytes in 468,919 blocks are still reachable in loss record 6 of 9
+==7267==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==7267==    by 0x10BE54: _ht_create_node (hashtable.c:357)
+==7267==    by 0x10BF4C: _ht_push_front (hashtable.c:372)
+==7267==    by 0x10B4F1: ht_insert (hashtable.c:145)
+==7267==    by 0x10C7D3: find_solution (ai.c:139)
+==7267==    by 0x10970F: main (in /mnt/c/Users/Agustin Teodoro/Desktop/UniMelb/Algorithms and Data Structures/Assignment 3/basecode/pegsol)
+==7267== 
+==7267== 37,982,439 bytes in 468,919 blocks are still reachable in loss record 7 of 9
+==7267==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==7267==    by 0x10BE83: _ht_create_node (hashtable.c:360)
+==7267==    by 0x10BF4C: _ht_push_front (hashtable.c:372)
+==7267==    by 0x10B4F1: ht_insert (hashtable.c:145)
+==7267==    by 0x10C7D3: find_solution (ai.c:139)
+==7267==    by 0x10970F: main (in /mnt/c/Users/Agustin Teodoro/Desktop/UniMelb/Algorithms and Data Structures/Assignment 3/basecode/pegsol)
+==7267== 
+==7267== 48,728,992 (21,176,792 direct, 27,552,200 indirect) bytes in 203,623 blocks are definitely lost in loss record 8 of 9
+==7267==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==7267==    by 0x10C50E: applyAction (ai.c:55)
+==7267==    by 0x10C72C: find_solution (ai.c:122)
+==7267==    by 0x10970F: main (in /mnt/c/Users/Agustin Teodoro/Desktop/UniMelb/Algorithms and Data Structures/Assignment 3/basecode/pegsol)
+==7267== 
+==7267== 134,152,184 bytes in 1 blocks are still reachable in loss record 9 of 9
+==7267==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==7267==    by 0x10C032: _ht_allocate (hashtable.c:389)
+==7267==    by 0x10AEAF: ht_setup (hashtable.c:27)
+==7267==    by 0x10C5FA: find_solution (ai.c:79)
+==7267==    by 0x10970F: main (in /mnt/c/Users/Agustin Teodoro/Desktop/UniMelb/Algorithms and Data Structures/Assignment 3/basecode/pegsol)
+==7267== 
+==7267== LEAK SUMMARY:
+==7267==    definitely lost: 21,176,792 bytes in 203,623 blocks
+==7267==    indirectly lost: 27,552,200 bytes in 264,925 blocks
+==7267==      possibly lost: 1,560 bytes in 15 blocks
+==7267==    still reachable: 221,408,246 bytes in 1,407,115 blocks
+==7267==         suppressed: 0 bytes in 0 blocks
+==7267== 
+==7267== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)

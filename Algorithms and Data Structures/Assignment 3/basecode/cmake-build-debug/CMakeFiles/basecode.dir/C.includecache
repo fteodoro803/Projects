@@ -1,0 +1,102 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/Agustin Teodoro/Desktop/UniMelb/Algorithms and Data Structures/Assignment 3/basecode/peg_solitaire.c
+src/utils.h
+/mnt/c/Users/Agustin Teodoro/Desktop/UniMelb/Algorithms and Data Structures/Assignment 3/basecode/src/utils.h
+src/ai.h
+/mnt/c/Users/Agustin Teodoro/Desktop/UniMelb/Algorithms and Data Structures/Assignment 3/basecode/src/ai.h
+stdio.h
+-
+time.h
+-
+
+/mnt/c/Users/Agustin Teodoro/Desktop/UniMelb/Algorithms and Data Structures/Assignment 3/basecode/src/ai.c
+time.h
+-
+stdlib.h
+-
+limits.h
+-
+math.h
+-
+ai.h
+/mnt/c/Users/Agustin Teodoro/Desktop/UniMelb/Algorithms and Data Structures/Assignment 3/basecode/src/ai.h
+utils.h
+/mnt/c/Users/Agustin Teodoro/Desktop/UniMelb/Algorithms and Data Structures/Assignment 3/basecode/src/utils.h
+hashtable.h
+/mnt/c/Users/Agustin Teodoro/Desktop/UniMelb/Algorithms and Data Structures/Assignment 3/basecode/src/hashtable.h
+stack.h
+/mnt/c/Users/Agustin Teodoro/Desktop/UniMelb/Algorithms and Data Structures/Assignment 3/basecode/src/stack.h
+
+/mnt/c/Users/Agustin Teodoro/Desktop/UniMelb/Algorithms and Data Structures/Assignment 3/basecode/src/ai.h
+stdint.h
+-
+unistd.h
+-
+utils.h
+/mnt/c/Users/Agustin Teodoro/Desktop/UniMelb/Algorithms and Data Structures/Assignment 3/basecode/src/utils.h
+
+/mnt/c/Users/Agustin Teodoro/Desktop/UniMelb/Algorithms and Data Structures/Assignment 3/basecode/src/hashtable.c
+assert.h
+-
+stdlib.h
+-
+string.h
+-
+stdio.h
+-
+hashtable.h
+/mnt/c/Users/Agustin Teodoro/Desktop/UniMelb/Algorithms and Data Structures/Assignment 3/basecode/src/hashtable.h
+
+/mnt/c/Users/Agustin Teodoro/Desktop/UniMelb/Algorithms and Data Structures/Assignment 3/basecode/src/hashtable.h
+stdbool.h
+-
+stddef.h
+-
+
+/mnt/c/Users/Agustin Teodoro/Desktop/UniMelb/Algorithms and Data Structures/Assignment 3/basecode/src/layouts.h
+
+/mnt/c/Users/Agustin Teodoro/Desktop/UniMelb/Algorithms and Data Structures/Assignment 3/basecode/src/stack.c
+stdio.h
+-
+stack.h
+/mnt/c/Users/Agustin Teodoro/Desktop/UniMelb/Algorithms and Data Structures/Assignment 3/basecode/src/stack.h
+utils.h
+/mnt/c/Users/Agustin Teodoro/Desktop/UniMelb/Algorithms and Data Structures/Assignment 3/basecode/src/utils.h
+
+/mnt/c/Users/Agustin Teodoro/Desktop/UniMelb/Algorithms and Data Structures/Assignment 3/basecode/src/stack.h
+utils.h
+/mnt/c/Users/Agustin Teodoro/Desktop/UniMelb/Algorithms and Data Structures/Assignment 3/basecode/src/utils.h
+
+/mnt/c/Users/Agustin Teodoro/Desktop/UniMelb/Algorithms and Data Structures/Assignment 3/basecode/src/utils.c
+utils.h
+/mnt/c/Users/Agustin Teodoro/Desktop/UniMelb/Algorithms and Data Structures/Assignment 3/basecode/src/utils.h
+layouts.h
+/mnt/c/Users/Agustin Teodoro/Desktop/UniMelb/Algorithms and Data Structures/Assignment 3/basecode/src/layouts.h
+
+/mnt/c/Users/Agustin Teodoro/Desktop/UniMelb/Algorithms and Data Structures/Assignment 3/basecode/src/utils.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+unistd.h
+-
+termios.h
+-
+stdbool.h
+-
+stdint.h
+-
+time.h
+-
+signal.h
+-
+

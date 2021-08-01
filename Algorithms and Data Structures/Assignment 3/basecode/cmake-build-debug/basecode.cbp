@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="basecode"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/mnt/c/Users/Agustin Teodoro/Desktop/UniMelb/Algorithms and Data Structures/Assignment 3/basecode/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/Agustin\ Teodoro/Desktop/UniMelb/Algorithms\ and\ Data\ Structures/Assignment\ 3/basecode/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/Agustin\ Teodoro/Desktop/UniMelb/Algorithms\ and\ Data\ Structures/Assignment\ 3/basecode/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/Agustin\ Teodoro/Desktop/UniMelb/Algorithms\ and\ Data\ Structures/Assignment\ 3/basecode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/Agustin\ Teodoro/Desktop/UniMelb/Algorithms\ and\ Data\ Structures/Assignment\ 3/basecode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/mnt/c/Users/Agustin Teodoro/Desktop/UniMelb/Algorithms and Data Structures/Assignment 3/basecode/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/Agustin\ Teodoro/Desktop/UniMelb/Algorithms\ and\ Data\ Structures/Assignment\ 3/basecode/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/Agustin\ Teodoro/Desktop/UniMelb/Algorithms\ and\ Data\ Structures/Assignment\ 3/basecode/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/Agustin\ Teodoro/Desktop/UniMelb/Algorithms\ and\ Data\ Structures/Assignment\ 3/basecode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/Agustin\ Teodoro/Desktop/UniMelb/Algorithms\ and\ Data\ Structures/Assignment\ 3/basecode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/mnt/c/Users/Agustin Teodoro/Desktop/UniMelb/Algorithms and Data Structures/Assignment 3/basecode/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/Agustin\ Teodoro/Desktop/UniMelb/Algorithms\ and\ Data\ Structures/Assignment\ 3/basecode/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/Agustin\ Teodoro/Desktop/UniMelb/Algorithms\ and\ Data\ Structures/Assignment\ 3/basecode/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/Agustin\ Teodoro/Desktop/UniMelb/Algorithms\ and\ Data\ Structures/Assignment\ 3/basecode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/Agustin\ Teodoro/Desktop/UniMelb/Algorithms\ and\ Data\ Structures/Assignment\ 3/basecode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="basecode">
+				<Option output="/mnt/c/Users/Agustin Teodoro/Desktop/UniMelb/Algorithms and Data Structures/Assignment 3/basecode/cmake-build-debug/basecode" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/Agustin Teodoro/Desktop/UniMelb/Algorithms and Data Structures/Assignment 3/basecode/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/mnt/c/Users/Agustin Teodoro/Desktop/UniMelb/Algorithms and Data Structures/Assignment 3/basecode/src"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/Agustin\ Teodoro/Desktop/UniMelb/Algorithms\ and\ Data\ Structures/Assignment\ 3/basecode/cmake-build-debug/Makefile&quot;  VERBOSE=1 basecode"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/Agustin\ Teodoro/Desktop/UniMelb/Algorithms\ and\ Data\ Structures/Assignment\ 3/basecode/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/Agustin\ Teodoro/Desktop/UniMelb/Algorithms\ and\ Data\ Structures/Assignment\ 3/basecode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/Agustin\ Teodoro/Desktop/UniMelb/Algorithms\ and\ Data\ Structures/Assignment\ 3/basecode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="basecode/fast">
+				<Option output="/mnt/c/Users/Agustin Teodoro/Desktop/UniMelb/Algorithms and Data Structures/Assignment 3/basecode/cmake-build-debug/basecode" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/Agustin Teodoro/Desktop/UniMelb/Algorithms and Data Structures/Assignment 3/basecode/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/mnt/c/Users/Agustin Teodoro/Desktop/UniMelb/Algorithms and Data Structures/Assignment 3/basecode/src"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/Agustin\ Teodoro/Desktop/UniMelb/Algorithms\ and\ Data\ Structures/Assignment\ 3/basecode/cmake-build-debug/Makefile&quot;  VERBOSE=1 basecode/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/Agustin\ Teodoro/Desktop/UniMelb/Algorithms\ and\ Data\ Structures/Assignment\ 3/basecode/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/Agustin\ Teodoro/Desktop/UniMelb/Algorithms\ and\ Data\ Structures/Assignment\ 3/basecode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/Agustin\ Teodoro/Desktop/UniMelb/Algorithms\ and\ Data\ Structures/Assignment\ 3/basecode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/mnt/c/Users/Agustin Teodoro/Desktop/UniMelb/Algorithms and Data Structures/Assignment 3/basecode/peg_solitaire.c">
+			<Option target="basecode"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Agustin Teodoro/Desktop/UniMelb/Algorithms and Data Structures/Assignment 3/basecode/src/ai.c">
+			<Option target="basecode"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Agustin Teodoro/Desktop/UniMelb/Algorithms and Data Structures/Assignment 3/basecode/src/ai.h">
+			<Option target="basecode"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Agustin Teodoro/Desktop/UniMelb/Algorithms and Data Structures/Assignment 3/basecode/src/hashtable.c">
+			<Option target="basecode"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Agustin Teodoro/Desktop/UniMelb/Algorithms and Data Structures/Assignment 3/basecode/src/hashtable.h">
+			<Option target="basecode"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Agustin Teodoro/Desktop/UniMelb/Algorithms and Data Structures/Assignment 3/basecode/src/layouts.h">
+			<Option target="basecode"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Agustin Teodoro/Desktop/UniMelb/Algorithms and Data Structures/Assignment 3/basecode/src/list.c">
+			<Option target="basecode"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Agustin Teodoro/Desktop/UniMelb/Algorithms and Data Structures/Assignment 3/basecode/src/list.h">
+			<Option target="basecode"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Agustin Teodoro/Desktop/UniMelb/Algorithms and Data Structures/Assignment 3/basecode/src/stack.c">
+			<Option target="basecode"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Agustin Teodoro/Desktop/UniMelb/Algorithms and Data Structures/Assignment 3/basecode/src/stack.h">
+			<Option target="basecode"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Agustin Teodoro/Desktop/UniMelb/Algorithms and Data Structures/Assignment 3/basecode/src/utils.c">
+			<Option target="basecode"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Agustin Teodoro/Desktop/UniMelb/Algorithms and Data Structures/Assignment 3/basecode/src/utils.h">
+			<Option target="basecode"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Agustin Teodoro/Desktop/UniMelb/Algorithms and Data Structures/Assignment 3/basecode/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
