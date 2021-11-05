@@ -34,11 +34,20 @@ class AbstractCar:
             self.angle -= self.rotation_velocity
 
     def move_forward(self):
+        self.forward = True
         self.velocity = min(self.velocity + self.acceleration, self.max_velocity)
         self.move()
 
+    def move_backward(self):
+        self.forward = False
+        self.velocity = max(self.velocity - self.acceleration, -self.max_velocity/2)  # /2 under assumption that bacwards cant move faster than forwards
+        self.move()
+
     def reduce_speed(self):
-        self.velocity = max(self.velocity - self.acceleration, 0)
+        if self.forward:
+            self.velocity = max(self.velocity - self.acceleration, 0)
+        else:
+            self.velocity = min(self.velocity + self.acceleration, 0)
         self.move()
 
     def move(self):
@@ -46,12 +55,8 @@ class AbstractCar:
         y = math.cos(radians) * self.velocity
         x = math.sin(radians) * self.velocity
 
-        if self.forward:
-            self.y -= y
-            self.x -= x
-        else:
-            self.y += y
-            self.x += x
+        self.y -= y
+        self.x -= x
 
     def draw(self, window):
         blit_rotate_center(window, self.img, (self.x, self.y), self.angle)
@@ -68,6 +73,26 @@ def draw(window, images, player_car):
     player_car.draw(window)
     pygame.display.update()
 
+def movePlayer(player, keys):
+    # Rotation
+    if keys[pygame.K_a]:
+        player.rotate(left=True)
+    if keys[pygame.K_d]:
+        player.rotate(right=True)
+
+    # Forward/Backward
+    moved = False
+
+    if keys[pygame.K_w]:
+        moved = True
+        player.move_forward()
+    if keys[pygame.K_s]:
+        moved = True
+        player.move_backward()
+
+    # Speed Reduction
+    if moved == False:
+        player.reduce_speed()
 
 # MAIN
 clock = pygame.time.Clock()
@@ -92,24 +117,5 @@ while run:
             break
 
     # Movement
-    # Rotation
-    if keys[pygame.K_a]:
-        player_car.rotate(left=True)
-    if keys[pygame.K_d]:
-        player_car.rotate(right=True)
+    movePlayer(player_car, keys)
 
-    # Forward/Backward
-    moved = False
-
-    if keys[pygame.K_w]:
-        moved = True
-        player_car.forward = True
-        player_car.move_forward()
-    if keys[pygame.K_s]:
-        moved = True
-        player_car.forward = False
-        player_car.move_forward()
-
-    # Speed Reduction
-    if moved == False:
-        player_car.reduce_speed()
